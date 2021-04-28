@@ -10,3 +10,4 @@ The script Cl_seq_list.py contsins charge sequences of some popular model and re
 The script FTS_polyampholytes_multi_species.py contains all the routines for CL evolution.
 The script submit_to_cluster.py includes a way to distribute multiple jobs to available 
 CPUs in a node and uses Python's multi processing module.
+The script calc_correlations.py could be used to calculate pair distribution functions.
