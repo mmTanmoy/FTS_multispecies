@@ -13,3 +13,5 @@ The script FTS_polyampholytes_multi_species.py contains all the routines for CL 
 The script submit_to_cluster.py includes a way to distribute multiple jobs to available 
 CPUs in a node and uses Python's multi processing module.
 The script calc_correlations.py could be used to calculate pair distribution functions.
+For phase separated droplet visualization, the example script plot_snapshots.py could 
+be used. Two input snapshot files can be found in the snapshots.zip file.
