@@ -14,7 +14,7 @@ def exe( PS , run_label ):
     np.random.seed()      # to ensure unique random seed for each process
     # CL time step
     dt = 0.0005           # CL time step in simulation
-    t_intvl = 500          # CL steps interval to take snapshots
+    t_intvl = 500         # CL steps interval to take snapshots
     t_tot = 60001         # total CL time steps
 
     # initialize fields
