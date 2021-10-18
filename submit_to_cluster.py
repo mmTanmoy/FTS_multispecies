@@ -47,16 +47,17 @@ def exe( PS , run_label ):
 if __name__ == '__main__':
     ncpus = 40
     
-    lB = 5.0
-    v = 0.068
-    Nx = 32
+    lB = 5.0             # Bjerrum length
+    v = 0.068            # Excluded volume parameter 
+    Nx = 32              # Grid dimension Nx*Nx*Nx
+    bulk_poly = 0.2.     # Polymer bulk densities
 
     seq_list = np.array(['sv28', 'sv9'])         # sequence pairs to be simulated
     sigs, rhop0s = [], []
     for seq in seq_list:
         sig, N, the_seq = sl.get_the_charge(seq)
         sigs.append(sig)
-        rhop0s.append(0.2)
+        rhop0s.append(bulk_poly)
     sigs, rhop0s = np.array(sigs), np.array(rhop0s) # setting up charge sequences and their bulk densities
 
     run_label_base = "sv28_sv9_"
