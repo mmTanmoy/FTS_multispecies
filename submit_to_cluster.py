@@ -13,8 +13,8 @@ import time
 def exe( PS , run_label ):
     np.random.seed()      # to ensure unique random seed for each process
     # CL time step
-    dt = 0.0005           # time interval in simulation
-
+    dt = 0.0005           # CL time step in simulation
+    t_intvl = 500          # CL steps interval to take snapshots
     t_tot = 60001         # total CL time steps
 
     # initialize fields
@@ -31,7 +31,7 @@ def exe( PS , run_label ):
     ev_f = open( 'evolution/evolution_' + run_label + '.txt' , 'w', 1)
 
     for t in range(1, t_tot):
-        if t %500 == 0:
+        if t %t_intvl == 0:
             allQs = np.concatenate([np.array([t, t*dt]), PS.Q])
             np.savetxt(ev_f, np.concatenate([allQs.real, allQs[2:].imag]), newline='  ', delimiter='  ')
             ev_f.write('\n')
