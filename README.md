@@ -6,7 +6,10 @@ The codes in this repository could be used to generate system snapshots of Compl
 evolution at an specified interval. Then from the snapshots, thermodynamic averages of field 
 operators could be computed. These codes have been used in the upcoming book chapter
 
-   Lin Y, Wessén J, Pal T, Das S & Chan H S, XXXXX (2021)
+   Yi-Hsuan Lin, Jonas Wessén, Tanmoy Pal, Suman Das and Hue Sun Chan, Phase-Separated Biomolecular 
+   Condensates: Methods and Protocols, Pages 51-94, Springer US.
+   
+   https://link.springer.com/protocol/10.1007/978-1-0716-2663-4_3
 
 The script Cl_seq_list.py contsins charge sequences of some popular model and real IDPs.
 The script FTS_polyampholytes_multi_species.py contains all the routines for CL evolution.
